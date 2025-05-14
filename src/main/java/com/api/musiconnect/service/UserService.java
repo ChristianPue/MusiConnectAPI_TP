@@ -12,7 +12,6 @@ import com.api.musiconnect.exception.InvalidInputException;
 import com.api.musiconnect.exception.ResourceNotFoundException;
 import com.api.musiconnect.mapper.UserMapper;
 import com.api.musiconnect.model.entity.User;
-import com.api.musiconnect.model.entity.UserProfile;
 import com.api.musiconnect.model.enums.Language;
 import com.api.musiconnect.model.enums.UserGender;
 import com.api.musiconnect.model.enums.UserStatus;

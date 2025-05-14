@@ -4,7 +4,6 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
-import org.aspectj.weaver.ast.Not;
 
 public record RegisterUserRequest(
         @NotBlank(message = "El email no puede estar vacío.")

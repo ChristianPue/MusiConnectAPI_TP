@@ -1,7 +1,5 @@
 package com.api.musiconnect.mapper;
-
 import com.api.musiconnect.dto.request.ConfigUpdateUserRequest;
-import com.api.musiconnect.dto.request.GeneralUpdateUserRequest;
 import com.api.musiconnect.dto.request.RegisterUserRequest;
 import com.api.musiconnect.dto.response.GeneralUserResponse;
 import com.api.musiconnect.dto.response.UserProfileResponse;
