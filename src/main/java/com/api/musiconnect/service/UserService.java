@@ -128,7 +128,6 @@ public class UserService
         }
 
         // Se ingresó una fecha de nacimento válida? (mayor o igual de 18 años)
-        birthdate = null;
         if (validationFunctions.isNotNullOrBlank(request.birthdate()))
         {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
