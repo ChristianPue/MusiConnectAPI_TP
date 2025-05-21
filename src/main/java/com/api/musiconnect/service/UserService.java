@@ -40,9 +40,13 @@ public class UserService
     public UserResponse registerUser(RegisterUserRequest request)
     {
         // Saber si el usuario con dichos datos ya está en la base de datos
-        if (userRepository.existsByUsernameOrEmail(request.username(), request.email()))
+        if (userRepository.existsByEmail(request.email()))
         {
-            throw new DuplicateResourceException("El username o email ya están registrados.");
+            throw  new DuplicateResourceException("El email ya existe.");
+        }
+        if (userRepository.existsByUsername(request.username()))
+        {
+            throw new DuplicateResourceException("El username ya existe.");
         }
 
         User user = userMapper.registerUsertoUser(request);
